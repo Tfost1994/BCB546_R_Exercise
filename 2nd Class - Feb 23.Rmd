@@ -1,0 +1,64 @@
+---
+title: "2nd Class - Feb 23"
+author: "Tyler Foster"
+date: "2/23/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#install.packages("tidyverse")
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+dbl_var <- c(1, 2.5, 4.5)
+
+# With the L suffix, you get an integer rather than a double
+int_var <- c(1L, 6L, 10L)
+
+# Use TRUE and FALSE (or T and F) to create logical vectors
+log_var <- c(TRUE, FALSE, T, F)
+
+chr_var <- c("these are", "some strings")
+```
+
+```{r}
+b <- c(TRUE, 2L)
+typeof(b)
+```
+```{r}
+x <- c(1,2,3)
+y <- list(1,2,3)
+z <- list(1:3, "a", c(TRUE, FALSE, TRUE), c(2.3, 5.9))
+```
+
+```{r}
+x <- list(list(list(list())))
+str(x)
+```
+```{r}
+str(x)
+str(y)
+str(z)
+```
+```{r}
+is.vector(list(1,2,3))
+is.double(c(1L,2L,3L))
+```
+```{r}
+typeof(as.integer(c(1L,2L,3L)))
+```
+```{r}
+c(1, FALSE)
+c("a", 1)
+c(list(1), "a")
+c(TRUE, 1L)
+```
+
